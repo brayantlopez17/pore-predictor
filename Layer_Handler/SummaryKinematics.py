@@ -55,11 +55,7 @@ def plot_multiple_df(df_list, attribute):
     fig.show()
     fig.write_html(f"{attribute}.html")
 
-    # fig = make_subplots(rows=2, cols=2, subplot_titles=("EOS", "Renishaw", "SLM", "Aconity"))
-    # fig.add_trace(trace_eos, row=1, col=1)
-    # fig.add_trace(trace_ren, row=1, col=2)
-    # fig.add_trace(trace_slm, row=2, col=1)
-    # fig.add_trace(trace_aco, row=2, col=2)
+
 
 
 
