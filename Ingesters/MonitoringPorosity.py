@@ -209,21 +209,7 @@ class MonitoringPorosity:
         self.porosity_df.to_csv(output_name, index=False)
 
 
-if __name__ == "__main__":
-    porosity_filepath = r"C:\Users\Brayant_TA\TailoredAlloys\Test_Data\XCT_Porosity\UTEP-49 Analysis of Porosity.csv"
-    layers_dir = r"D:\GTADExP_Data\MonitoringData\UTEP 45\UTEP 45\common_monitoring_file"
 
-    obj = MonitoringPorosity(porosity_filepath, layers_dir)
-
-    layer = 315
-    save = False
-    #obj.plot_layer_n(layer, save)
-    #obj.save_image(layer)
-
-    obj.pores_csv("UTEP49_Porosity.csv")
-    #
-    # for n in tqdm(range(180, 201), desc='Saving Images', colour='green', ncols=200):
-    #     obj.save_image(n)
 
 
 

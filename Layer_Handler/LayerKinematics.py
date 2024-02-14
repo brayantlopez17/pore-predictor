@@ -72,15 +72,3 @@ class LayerKinematics:
     def _polygon_delays(self):
         self.df['polygons'] = np.where(self.df['length'] == 0.0, 1, 0)
 
-    # @property
-    # def df(self):
-    #     return self.df
-
-if __name__ == "__main__":
-    filepath = r"D:\GTADExP_Data\MonitoringData\UTEP49_F\UTEP49_F\MPM\data\scaled\100-199\slm-id_00180_l1_scaled.csv"
-
-    obj = LayerKinematics(filepath)
-    # obj.to_csv("utep49_layer_180.csv")
-
-    polygon_delay_df = obj.df[obj.df["polygons"] == 1]
-    polygon_delay_df.to_csv("checking_polygons.csv")

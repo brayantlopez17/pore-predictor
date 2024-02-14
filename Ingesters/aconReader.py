@@ -12,7 +12,6 @@ import pandas as pd
 import numpy as np
 
 __author__ = 'Brayant Lopez'
-__copyright__ = 'Copyright 2023, Tailored Alloys'
 __license__ = 'MIT'
 __version__ = '0.1.2'
 
@@ -107,9 +106,3 @@ class AconityFileReader:
         layer = f"layer_{layer_num}"
         self._df.to_hdf(output_file, key=layer, format="table", data_columns=True, index=False)
 
-
-
-if __name__ == "__main__":
-    filepath = r"D:\GTADExP_Data\MonitoringData\UTEP51 PCD\UTEP51 PCD\00_15.pcd"
-    obj = AconityFileReader(filepath)
-    obj.to_h5("acon_003.h5")

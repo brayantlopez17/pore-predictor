@@ -75,13 +75,5 @@ def plot_time_bars(wide_df):
     fig.write_html("Aconity-times.html")
 
 
-if __name__ == "__main__":
-    filepath = "C:/Users/braya/HT_Test/MonitoringData/kinematics_summary.xlsx"
-    df_eos, df_ren, df_slm, df_aconity = read_excel(filepath)
-    # print(df_eos.columns)
-    df_list = [df_eos, df_ren, df_slm, df_aconity]
-    attribute = 'distance off'
-    plot_multiple_df(df_list, attribute)
-    #plot_time_bars(df_aconity)
 
 

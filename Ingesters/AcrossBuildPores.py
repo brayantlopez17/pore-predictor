@@ -223,14 +223,5 @@ class MonitoringPorosity:
 
 
 
-if __name__ == "__main__":
-    porosity_filepath = r"C:\Users\Brayant_TA\TailoredAlloys\Test_Data\XCT_Porosity\UTEP-45 Analysis of Porosity correct coords (10262023).csv"
-    porosity_filepath2 = r"C:\Users\Brayant_TA\TailoredAlloys\Test_Data\XCT_Porosity\UTEP-49 Analysis of Porosity.csv"
-    layers_dir = r"D:\GTADExP_Data\MonitoringData\UTEP 45\UTEP 45\common_monitoring_file"
 
-    obj = MonitoringPorosity(porosity_filepath, layers_dir, porosity_filepath2)
-
-    obj.compare_histograms()
-    # for n in range(320, 331):
-    #     obj.plot_layer_n(n, save=True)
 
